@@ -13,16 +13,25 @@
 	<remote name="ettus"
 		fetch="git://github.com/EttusResearch" />
 
+	<remote name="kekiefer"
+		fetch="git://github.com/kekiefer" />
+
+	<remote name="qt5"
+		fetch="git://github.com/meta-qt5" />
+
         <remote name="yocto"
                 fetch="git://git.yoctoproject.org/" />
  
 	<default remote="openembedded" revision="master"  />
 
-	<project name="meta-ettus" remote="ettus" path="meta-ettus" revision="40cf300296b889df5b8445bf7db457c160220919" />
-	<project name="bitbake"  path="bitbake" revision="b09966906ef054834f0b465f0c5a2a937b4c4a4c" />
-	<project name="openembedded-core"  path="oe-core" revision="9f339f516ab03d598fae0e536b3a420ea4d8ee1a" />
-	<project name="meta-openembedded"  path="meta-oe" revision="e8a8e0be8e39dbb949bf0f0df90abe1c4e3f6470"  />
-	<project name="meta-xilinx" remote="Xilinx" path="meta-xilinx" revision="13779b9254bab450875a60ed8f21edd0e8876a71" />
-	<project name="meta-sdr" remote="balister" path="meta-sdr" revision="3d06bc06e874dc3b8db64fc1bf838763f834d193" />
+	<project name="meta-ettus" remote="kekiefer" path="meta-ettus" revision="rocko+e3xx" />
+	<project name="bitbake"  path="bitbake" revision="1.36" />
+	<project name="openembedded-core"  path="oe-core" revision="rocko" />
+	<project name="meta-openembedded"  path="meta-oe" revision="rocko"  />
+	<project name="meta-xilinx" remote="Xilinx" path="meta-xilinx" revision="rocko" />
+	<project name="meta-sdr" remote="balister" path="meta-sdr" revision="rocko" />
+	<project name="meta-qt5" remote="qt5" path="meta-qt5" revision="rocko" />
+	<project name="meta-qt4" remote="yocto" path="meta-qt4" revision="rocko" />
+	<project name="meta-cloud-services" remote="yocto" path="meta-cloud-services" revision="rocko" />
 
 </manifest>
